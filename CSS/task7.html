@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: white;
+    margin-left: 50px;
+  }
+
+  input[type=Register] {
+    background-color: #e9f3ef;
+    color: black;
+    padding: 12px 12px 12px 12px;
+    border: 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    float: right;
+    font-size: 25px;
+    float:center;
+    
+    
+  }
+
+  input[type=Register]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #c91a7e;
+    padding: 20px;
+  }
+
+  #form {
+    background-color: #770242;
+    padding: 20px 20px 20px 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <form action="/action_page.php" id="form">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text"  placeholder="Your email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Password">Password</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phonenumber" name="phonenumber">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Gender">Gender</label>
+      </div>
+      <div class="col-75">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="Male" value="male" checked>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="language">Language</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Hindi</option>
+          <option value="canada">English</option>
+          <option value="usa">Malayalam</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Zip-Code">Zip Code</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="zipcode" name="zipcode">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="zip-code">About</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="Register" value="Register" style="width: 500px; height: 50px;">
+    </div>
+  </form>
+</div>
+
+<br>
+    <a href="../index.html">Go to back</a>
+</body>
+</html>

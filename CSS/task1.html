@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .table {
+            margin: 100px auto;
+            background-color: skyblue;
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+
+        .tr {
+
+            color: black;
+            width: 800px;
+        }
+
+        .th {
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+
+        .td {
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+        
+        .symbols{
+            margin: 100px auto;
+            border-spacing: 30px;
+        }
+        
+        .rectange {
+            
+            border: 2px solid rgb(92, 225, 92);
+            height: 50px;
+            width: 70px;
+            border-radius: 5px;
+            /* display: inline; */
+
+        }
+        .rectangle{
+            border: 2px solid rgb(92, 225, 92);
+            height: 50px;
+            width: 70px;
+         /* border-radius: 5px; */
+
+        }
+       .rectange1{
+            border: 2px solid rgb(92, 225, 92);
+            height: 50px;
+            width: 70px;
+            border-radius: 15px;
+       }
+       .oval{
+            border: 2px solid rgb(92, 225, 92);
+            height: 40px;
+            width: 50px;
+            border-radius: 100px;
+       }
+       .special{
+            border: 2px solid rgb(92, 225, 92);
+            height: 50px;
+            width: 70px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 20px;
+       }
+       
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <tr class="tr">
+                <th class="th">Firstname</th>
+                <th class="th">Lastname</th>
+                <th class="th">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr">
+                <td  class="td">jill</td>
+                <td class="td">smith</td>
+                <td class="td">50</td>
+            </tr>
+            <tr class="tr">
+                <td class="td">Eve</td>
+                <td class="td">Jackson</td>
+                <td class="td">94</td>
+            </tr>
+            <trclass="tr">
+                <td class="td">John</td>
+                <td class="td">Doe</td>
+                <td class="td">80</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table class="symbols">
+        
+        <tbody>
+            <tr>
+                <td class="rectange"></td>
+                <td class="rectange"></td>
+                <td class="rectange1"></td>
+            </tr>
+            <tr>
+                <td class="rectange"></td>
+                <td class="rectangle"></td>
+                <td class="rectange1"></td>
+            </tr>
+            <tr>
+                <td class="oval"></td>
+                <td class="rectangle"></td>
+                <td class="special"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <a href="../index.html">Go to back</a>
+</body>
+
+</html>
